@@ -1,9 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Ниджат  Велиев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2665655).
-* Наставник: `Неизвестно`.
-* Сайт:[Мой проект Седона] (https://nicat0202.github.io/2665655-sedona-2/).
-* Мой наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena ).
+* Студент: Ниджат  Велиев (https://up.htmlacademy.ru/htmlcss-individual/2/user/2665655).
+* Наставник: Анна Лисененкова (https://htmlacademy.ru/profile/ankhena ).
+* Сайт: Мой проект Седона (https://nicat0202.github.io/2665655-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
