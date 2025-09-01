@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title> Гостиницы Седоны </title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="navigation-logo" href="index.html">
-       <img class="header-logo" src="logo-sedona.svg" alt="Логотип города Седона">
+       <img class="header-logo" src="logo-sedona.svg" width="138" height="64" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -20,26 +21,25 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
-        </ul>
-        <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-link" href="#">
             <p class="visually-hidden">Поиск</p>
             </a>
           </li>
+        </ul>
+          <ul class="navigation-user-list">
           <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <p class="visually-hidden">В избранном 12 отелей</p>
+            <a class="navigation-link" href="#">
+              <p class="visually-hidden" >В избранном 12 отелей</p>
             </a>
           </li>
-        </ul>
-            <a class="navigation-button-link" href="#">Хочу сюда!</a>
+          </ul>
+            <button class="page-button" type="button">Хочу сюда!</button>
       </nav>
     </header>
     <main class="main-inner">
       <header class="header-nav" >
         <h1 class="inner-title">Гостиницы Седоны</h1>
-        <img class="header-img" src="images/big-rocks.jpg" alt="Большие размытые скалы">
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная страница</a>
@@ -86,7 +86,7 @@
               </li>
               <li class="catalog-ffilter-item">
                 <label class="control">
-                  <input type="radio" id="motel" name="motel">
+                  <input type="radio" id="motel" name="type-house" value="motel">
                   Мотель
                 </label>
               </li>
@@ -108,7 +108,7 @@
                 <span class="price-title">До</span>
               </label>
             </fieldset>
-               <button class="button" type="submit">Применить</button>
+               <button class="button-apply" type="submit">Применить</button>
                <button class="reset-button" type="reset">Сбросить</button>
           </fieldset>
         </form>
@@ -137,48 +137,48 @@
           </ul>
           <ul class="catalog-card-list">
             <li class="catalog-card-item">
-              <img class="card-photo" src="images/hotel-1.jpg" alt="Пещера с видом на звездное небо">
+              <img class="card-photo" src="images/hotel-1.jpg" width="300" height="212" alt="Пещера с видом на звездное небо">
               <h3 class="card-title">Amara Resort & Spa</h3>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 4000р</p>
-              <a class="btn btn-details" href="#">Подробнее</a>
-              <a class="btn btn-favorite" href="#" > В избранное</a>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-favorite" type="button" > В избранное</button>
               <p class="stars">
                 <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 8,5</span>
             </li>
             <li class="catalog-card-item">
-              <img class="card-photo" src="images/hotel-2.jpg" alt="Большие скалы на рассвете с радугой">
+              <img class="card-photo" src="images/hotel-2.jpg" width="300" height="212" alt="Большие скалы на рассвете с радугой">
               <h3 class="card-title">Villas at Poco Diablo</h3>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 5000р</p>
-              <a class="btn btn-details" href="#">Подробнее</a>
-              <a class="btn btn-favorite" href="#" > В избранном</a>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-favorite-green" type="button" > В избранном</button>
               <p class="stars">
                 <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 9,2</span>
             </li>
             <li class="catalog-card-item">
-              <img class="card-photo" src="images/hotel-3.jpg" alt="Большие скалы с растением">
+              <img class="card-photo" src="images/hotel-3.jpg" width="300" height="212" alt="Большие скалы с растением">
               <h3 class="card-title">Desert Quail Inn</h3>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 2500р</p>
-              <a class="button button-details" href="#">Подробнее</a>
-              <a class="bbutton button-favorite" href="#" > В избранное</a>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-favorite" type="button" > В избранное</button>
               <p class="stars">
                 <span class="visually-hidden">Отель 3 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 6,9</span>
             </li>
           <li class="catalog-card-item">
-              <img class="card-photo" src="images/hotel-4.jpg" alt="Большие скалы ночью,под звездным небом">
+              <img class="card-photo" src="images/hotel-4.jpg" width="300" height="212" alt="Большие скалы ночью,под звездным небом">
               <h3 class="card-title">GreenTree Inn</h3>
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 1500р</p>
-              <a class="btn btn-details" href="#">Подробнее</a>
-              <a class="btn btn-favorite" href="#" > В избранное</a>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-favorite" type="button" > В избранное</button>
               <p class="stars">
                 <span class="visually-hidden">Отель 2 звезды</span>
               </p>
@@ -187,7 +187,7 @@
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item">
-             <a class="pagination-link" href="#">1</a>
+             <a class="pagination-link-1" href="#">1</a>
             </li>
             <li class="pagination-item">
              <a class="pagination-link" href="#">2</a>
@@ -196,25 +196,26 @@
              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination">
-                <a class="pagination-link" href="#">4</a>
+             <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination">
-             <a class="pagination-link" href="#">...</a>
+             <a class="pagination-link-space" href="#">...</a>
             </li>
             <li class="pagination">
              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
       </section>
-      <section class="subscribe-section">
-        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+       <section class="subscribe-another">
+        <h3 class="subscribe-title-another">Подпишитесь на рассылку</h3>
+        <p class="subscribe-another-text" >Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
+          <label class="visually-hidden" for="subscribe-email">
           <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+          </label>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
-      </section>
+       </section>
       </main>
     <footer class="footer">
       <ul class="social-list">
@@ -240,3 +241,4 @@
       <a class="author-logo" href="https://htmlacademy.ru/">.htmlacademy</a>
     </footer>
   </body>
+</html>
