@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="header container">
       <nav  class="navigation">
       <a class="navigation-logo" href="index.html">
        <img class="header-logo" src="images/logo-sedona.svg" width="138" height="64" alt="Логотип города Седона">
@@ -28,28 +28,30 @@
             <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden" >В избранном 12 отелей</span>
             </a>
           </li>
+          <li class="navigation-user-item">
+            <button class="button page-button" type="button">Хочу сюда!</button>
+          </li>
           </ul>
-            <button class="button page-button" type="button" >Хочу сюда!</button>
       </nav>
     </header>
-    <main class="main-inner">
-      <div class="header-nav" >
+     <main class="main container">
+      <div class="header-nav">
         <h1 class="inner-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs-list">
+        <div class="breadcrumbs-div">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная страница</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
         </li>
-      </ul>
-      </div>
-      <section class="filter-section">
+        </div>
+       <section class="filter-section">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -75,7 +77,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-home">
             <legend class="cataog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -97,7 +99,9 @@
                 </label>
               </li>
             </ul>
+          </fieldset>
             <fieldset class="fieldset-price">
+              <div class="price-div">
               <legend class="price-hotels">Стоимость, ₽:</legend>
               <label class="price-input">
                 <input type="number" id="price-min" name="price-min" value="0" min="0" max="9000" placeholder="0">
@@ -107,13 +111,18 @@
                 <input type="number" id="price-max" name="price-max" value="9000" min="0" max="9000"  placeholder="9000">
                 <span class="price-title">До</span>
               </label>
+              </div>
             </fieldset>
+            <div class="button-fildset">
                <button class=" button button-apply" type="submit">Применить</button>
-               <button class=" button reset-button" type="reset">Сбросить</button>
-          </fieldset>
+               <button class=" button button-reset" type="reset">Сбросить</button>
+            </div>
         </form>
       </section>
+      </div>
+      </ul>
       <section class="section-catalog">
+        <div class="catalog-div">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
           <select class="catalog-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -135,6 +144,7 @@
               </a>
             </li>
           </ul>
+        </div>
           <ul class="catalog-card-list">
             <li class="catalog-card-item">
               <img class="card-photo" src="images/hotel-1.jpg" width="300" height="212" alt="Пещера с видом на звездное небо">
@@ -183,7 +193,6 @@
                 <span class="visually-hidden">Отель 2 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 5,0</span>
-          </li>
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item">
@@ -216,8 +225,8 @@
           <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
        </section>
-      </main>
-    <footer class="footer">
+     </main>
+    <footer class="footer container">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -241,4 +250,3 @@
       <a class="author-logo" href="https://htmlacademy.ru/">.htmlacademy</a>
     </footer>
   </body>
-</html>
