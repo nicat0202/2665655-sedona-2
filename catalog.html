@@ -95,19 +95,21 @@
               <li class="catalog-filter-group">
                 <label class="control">
                   <input type="radio" name="type-house" value="apartments">
-                  Аппартаменты
+                  Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
             <fieldset class="fieldset-price">
               <legend class="price-hotels">Стоимость, ₽:</legend>
-              <label class="price-input">
-                <input type="number" id="price-min" name="price-min" value="0" min="0" max="" placeholder="0">
+              <div class="price-hotels-input">
+              <label class="price-input-min">
+                <input class="input-hotels" type="number" id="price-min" name="price-min" value="0" min="0" max="" placeholder="0">
               </label>
-              <label class="price-input">
-                <input type="number" id="price-max" name="price-max" value="9000" min="0" max=""  placeholder="9000">
+              <label class="price-input-max">
+                <input class="input-hotels" type="number" id="price-max" name="price-max" value="0" min="0" max=""  placeholder="9000">
               </label>
+            </div>
             </fieldset>
             <div class="button-fieldset">
                <button class=" button button-apply" type="submit">Применить</button>
@@ -142,71 +144,96 @@
           </ul>
         </div>
           <ul class="catalog-card-list">
+            <div class="card-item-div">
             <li class="catalog-card-item">
               <img class="card-photo" src="images/hotel-1.jpg" width="300" height="212" alt="Пещера с видом на звездное небо">
               <h3 class="card-title">Amara Resort & Spa</h3>
+              <div class="div-description">
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 4000р</p>
+              </div>
+              <div class="button-card">
               <button class=" button button-details" type="button">Подробнее</button>
               <button class=" button button-favorite" type="button" > В избранное</button>
+              </div>
               <p class="stars">
                 <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 8,5</span>
             </li>
+            </div>
+            <div class="card-item-div">
             <li class="catalog-card-item">
               <img class="card-photo" src="images/hotel-2.jpg" width="300" height="212" alt="Большие скалы на рассвете с радугой">
               <h3 class="card-title">Villas at Poco Diablo</h3>
+              <div class="div-description">
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 5000р</p>
+              </div>
+              <div class="button-card">
               <button class="button button-details" type="button">Подробнее</button>
-              <button class=" button button-favorite-green" type="button" > В избранном</button>
+              <button class=" button button-favorite-green button-favorite" type="button" > В избранном</button>
+              </div>
               <p class="stars">
                 <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 9,2</span>
             </li>
+            </div>
+            <div class="card-item-div">
             <li class="catalog-card-item">
               <img class="card-photo" src="images/hotel-3.jpg" width="300" height="212" alt="Большие скалы с растением">
               <h3 class="card-title">Desert Quail Inn</h3>
+              <div class="div-description">
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 2500р</p>
+              </div>
+              <div class="button-card">
               <button class="button button-details" type="button">Подробнее</button>
               <button class="button button-favorite" type="button" > В избранное</button>
+              </div>
               <p class="stars">
                 <span class="visually-hidden">Отель 3 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 6,9</span>
             </li>
+            </div>
+            <div class="card-item-div">
           <li class="catalog-card-item">
               <img class="card-photo" src="images/hotel-4.jpg" width="300" height="212" alt="Большие скалы ночью,под звездным небом">
               <h3 class="card-title">GreenTree Inn</h3>
+              <div class="div-description">
               <p class="card-text">Гостиница</p>
               <p class="card-price">От 1500р</p>
+              </div>
+              <div class="button-card">
               <button class="button button-details" type="button">Подробнее</button>
               <button class="button button-favorite" type="button" > В избранное</button>
+              </div>
               <p class="stars">
                 <span class="visually-hidden">Отель 2 звезды</span>
               </p>
               <span class="card-raiting">Рейтинг: 5,0</span>
+          </li>
+            </div>
           </ul>
           <ul class="pagination-list">
-            <li class="pagination-item">
+            <li class="pagination-item-1">
              <a class="pagination-link-1" href="#">1</a>
             </li>
             <li class="pagination-item">
              <a class="pagination-link" href="#">2</a>
             </li>
-            <li class="pagination">
+            <li class="pagination-item">
              <a class="pagination-link" href="#">3</a>
             </li>
-            <li class="pagination">
+            <li class="pagination-item">
              <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination">
+            <li class="pagination-item ">
              <a class="pagination-link-space" href="#">...</a>
             </li>
-            <li class="pagination">
+            <li class="pagination-item">
              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
