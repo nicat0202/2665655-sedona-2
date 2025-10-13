@@ -125,13 +125,37 @@ body{
   text-decoration: none;
 }
 
-.main-img{
-  background: #F2F2F2;
+.section-main{
   background-color: #f2f2f2;
   background-image: url(../images/welcome-vector.svg),url(../images/welcome-sedona-img.jpg);
+  padding: 51px 371px 25px;
+  min-height: 435px;
+  background-size: auto, cover;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left bottom, center;
+}
 
+.main-img{
+}
+
+.price-hotels-min{
+  border-bottom-left-radius: 4px;
+}
+
+.price-hotels-max{
+  border-top-left-radius: 4px;
+}
+
+.price-hotels-input{
+  display: flex;
+  gap: 2px;
+}
+
+.input-hotels{
+  width: 143px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border: none;
 }
 
 .intro-title{
@@ -418,14 +442,23 @@ body{
 }
 
 .catalog-card-list{
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 70px 40px;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  grid-template-columns: 340px 340px 340px;
+  display: grid;
   color: #000000;
 }
-
 .button-fieldset{
   display: flex;
   flex-direction: column;
+}
+
+.button-card{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .button-apply{
@@ -468,12 +501,23 @@ body{
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
-.card-text .card-price{
+.card-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  margin: 0;
+}
+.card-price{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin: 0;
 }
 
 .button-details{
@@ -481,6 +525,8 @@ body{
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 26px;
 }
 
 .button-favorite{
@@ -488,18 +534,14 @@ body{
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 26px;
 }
 
 .button-favorite-green{
   color: #ffffff;
   background-color: #7DB54F;
-  text-transform: uppercase;
-}
 
-.pagination-link{
-  color: #ffffff;
-  background-color: #82B3D3;
-  border-radius: 4px;
 }
 
 .subscribe-title{
@@ -613,4 +655,68 @@ body{
 
 .price-hotels{
   padding-bottom: 35px;
+}
+
+.catalog-card-list{
+  margin: 0 70px 0;
+  padding: 0;
+  gap: 20px;
+  list-style: none;
+}
+
+.card-item-div{
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px #e6e6e6;
+    padding: 20px;
+}
+
+.div-description{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list{
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  list-style: none;
+  margin: 40px 70px 60px;
+  padding:  0;
+  gap: 8px;
+}
+
+.pagination-link{
+  display: block;
+  padding: 17px 24px;
+  text-decoration: none;
+    color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-link-space{
+  border-radius: 4px;
+  padding: 17px 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-item-1{
+  justify-self: center;
+  background-color: #f2f2f2;
+    border-radius: 4px;
+  ;
+}
+
+.pagination-link-1{
+    display: block;
+  padding: 17px 24px;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pagination-item{
+  justify-items: center;
 }
