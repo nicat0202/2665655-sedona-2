@@ -493,6 +493,13 @@ body{
 }
 
 .breadcrumbs-list{
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  margin-top: 8px;
+  padding: 0;
   margin-top: 8px;
   padding: 0;
 }
@@ -766,17 +773,6 @@ body{
   font-size: 16px;
   line-height: 20px;
   border: none;
-}
-
-.breadcrumbs-div{
-  max-height: 21px;
-  align-items: center;
-  justify-content: flex-start;
-  width: 300px;
-  display: flex;
-  gap: 10px;
-  list-style: none;
-  margin-bottom: 40px;
 }
 
 .breadcrumbs-item{
